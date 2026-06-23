@@ -1,0 +1,95 @@
+# plik_lokalny	strony	zrodlo(uploads/...)
+12-scaled-ooe2xckih274w3s223knzagf5had6xkzz2041ziws0.jpg	index,program	elementor/thumbs/12-scaled-ooe2xckih274w3s223knzagf5had6xkzz2041ziws0.jpg
+12-scaled.jpg	o-nas	2020/04/12-scaled.jpg
+94355495_2152532304880343_7817467221822668800_n.jpg	program	2020/05/94355495_2152532304880343_7817467221822668800_n.jpg
+94574499_602758233782893_7871180447898664960_n.jpg	program	2020/05/94574499_602758233782893_7871180447898664960_n.jpg
+95486100_832909483867496_8880658162307301376_n.jpg	program	2020/05/95486100_832909483867496_8880658162307301376_n.jpg
+Ania-w-pracy.jpg	nauczyciele	2020/03/Ania-w-pracy.jpg
+Anna-J.png	nauczyciele	2020/05/Anna-J.png
+Certyfikat-NVC.png	galeria,index	2021/02/Certyfikat-NVC.png
+DSCN2147.jpg	galeria	2020/04/DSCN2147.jpg
+DSCN2148.jpg	galeria	2020/04/DSCN2148.jpg
+DSCN2149.jpg	galeria	2020/04/DSCN2149.jpg
+DSCN2151.jpg	galeria	2020/04/DSCN2151.jpg
+DSCN2152.jpg	galeria	2020/04/DSCN2152.jpg
+DSCN2155.jpg	galeria	2020/04/DSCN2155.jpg
+DSCN2156.jpg	galeria	2020/04/DSCN2156.jpg
+DSCN2157.jpg	galeria	2020/04/DSCN2157.jpg
+DSCN2158.jpg	galeria	2020/04/DSCN2158.jpg
+DSCN2164.jpg	galeria	2020/04/DSCN2164.jpg
+DSCN2165.jpg	galeria	2020/04/DSCN2165.jpg
+DSCN2166.jpg	galeria	2020/04/DSCN2166.jpg
+DSCN2169.jpg	galeria	2020/04/DSCN2169.jpg
+DSCN2170.jpg	galeria	2020/04/DSCN2170.jpg
+DSCN2172.jpg	galeria	2020/04/DSCN2172.jpg
+DSCN2173.jpg	galeria	2020/04/DSCN2173.jpg
+DSCN2175.jpg	galeria	2020/04/DSCN2175.jpg
+DSCN2176.jpg	galeria	2020/04/DSCN2176.jpg
+DSCN2178.jpg	galeria	2020/04/DSCN2178.jpg
+DSCN8672-scaled.jpg	galeria	2020/04/DSCN8672-scaled.jpg
+DSCN8672.jpg	galeria	2020/04/DSCN8672.jpg
+DSCN8674-scaled.jpg	galeria	2020/04/DSCN8674-scaled.jpg
+DSCN8674.jpg	galeria	2020/04/DSCN8674.jpg
+DSCN8677-scaled.jpg	galeria	2020/04/DSCN8677-scaled.jpg
+DSCN8677.jpg	galeria	2020/04/DSCN8677.jpg
+DSCN8678-scaled.jpg	galeria	2020/04/DSCN8678-scaled.jpg
+DSCN8678.jpg	galeria	2020/04/DSCN8678.jpg
+DSCN8680-scaled.jpg	galeria	2020/04/DSCN8680-scaled.jpg
+DSCN8680.jpg	galeria	2020/04/DSCN8680.jpg
+DSCN8681-scaled.jpg	galeria	2020/04/DSCN8681-scaled.jpg
+DSCN8681.jpg	galeria	2020/04/DSCN8681.jpg
+DSCN8684-scaled.jpg	galeria	2020/04/DSCN8684-scaled.jpg
+DSCN8684.jpg	galeria	2020/04/DSCN8684.jpg
+DSCN8690-scaled.jpg	galeria	2020/04/DSCN8690-scaled.jpg
+DSCN8690.jpg	galeria	2020/04/DSCN8690.jpg
+DSCN8693-scaled.jpg	galeria	2020/04/DSCN8693-scaled.jpg
+DSCN8693.jpg	galeria	2020/04/DSCN8693.jpg
+DSC_1453-scaled.jpg	nauczyciele	2020/05/DSC_1453-scaled.jpg
+DSC_1453.jpg	nauczyciele	2020/05/DSC_1453.jpg
+Francja-mapa.png	index,program	2020/04/Francja-mapa.png
+IMG_7139.jpg	nauczyciele	2024/09/IMG_7139.jpg
+IMG_7141.jpg	nauczyciele	2024/09/IMG_7141.jpg
+IMG_7143.jpg	nauczyciele	2024/09/IMG_7143.jpg
+IMG_8789-scaled.jpg	o-nas	2020/03/IMG_8789-scaled.jpg
+IMG_8789.jpg	program	2020/03/IMG_8789.jpg
+Integracja-sensoryczna.jpg	index,program	2020/03/Integracja-sensoryczna.jpg
+LOGO.png	kontakt	2020/03/LOGO.png
+Monika-Sawczuk.png	nauczyciele	2020/04/Monika-Sawczuk.png
+Natalia.jpg	nauczyciele	2026/02/Natalia.jpg
+Nowy-obraz-mapy-bitowej-258x300.jpg	nauczyciele	2020/05/Nowy-obraz-mapy-bitowej.jpg
+Olga-J.jpg	nauczyciele	2020/06/Olga-J.jpg
+P1019177.jpg	program	2020/05/P1019177.jpg
+background-img1.jpg	index	2020/05/background-img1.jpg
+background-img14-540x510-1.jpg	index	2020/05/background-img14-540x510-1.jpg
+background-img16-540x510-1.jpg	index	2020/05/background-img16-540x510-1.jpg
+basen-on3l0yahma9ajrd8g7lurshyjp421jzhls8w9g7rzk.jpg	index,program	elementor/thumbs/basen-on3l0yahma9ajrd8g7lurshyjp421jzhls8w9g7rzk.jpg
+cropped-android-chrome-512x512-1.png	blog,galeria,index,kontakt,nauczyciele,o-nas,program	2020/05/cropped-android-chrome-512x512-1.png
+cropped-cute_owl.png	o-nas	2020/04/cropped-cute_owl.png
+img10-1.jpg	index	2019/06/img10-1.jpg
+img12.jpg	index,nauczyciele	2019/06/img12.jpg
+img13.jpg	index,o-nas	2019/06/img13.jpg
+img14-540x510-1.jpg	o-nas	2019/06/img14-540x510-1.jpg
+img2.jpg	program	2019/06/img2.jpg
+img59-2.jpg	index	2019/06/img59-2.jpg
+img61-2-omptdk9cug03j9vxbb322ibir4wqw2yr17dup8sd4g.jpg	o-nas	elementor/thumbs/img61-2-omptdk9cug03j9vxbb322ibir4wqw2yr17dup8sd4g.jpg
+img62-2-omptdjbinlyt7nxagsofi0k25r1dodv0p2qd7ytrao.jpg	o-nas	elementor/thumbs/img62-2-omptdjbinlyt7nxagsofi0k25r1dodv0p2qd7ytrao.jpg
+img62-2.jpg	index	2019/06/img62-2.jpg
+kinesis-fizjoterapia-dzieci-2.png	index,program	2020/03/kinesis-fizjoterapia-dzieci-2.png
+kubki.png	program	2020/05/kubki.png
+lat-1-denoised_sharpened_upscaled_x2_light-100_wb-100_exposure_correction.png	blog	2024/05/lat-1-denoised_sharpened_upscaled_x2_light-100_wb-100_exposure_correction.png
+mapa.jpg	index,program	2020/04/mapa.jpg
+p.-Paulina.jpg	nauczyciele	2024/09/p.-Paulina.jpg
+slajd-smp-2.png	blog,index	2024/09/slajd-smp-2.png
+
+# NIE POBRANO:
+P82e2.png.pagespeed.ic.N937HIXqkU.png
+P84-otwarty.png.pagespeed.ic.lmOed3sZvB.jpg
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2019/06/img16.jpg
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2020/03/LOGO-małe2.png
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2020/04/długie-logo-większy-tekst.png
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2020/05/tańce1.png
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2020/05/zdjęcie-w-tle.jpg
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2021/06/Karta-Dużej-Rodziny.png
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2024/03/dzień-otwarty.jpg
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2025/01/Dzień-otwarty.png
+https://www.czarodziejski-dworek.pl/wp-content/uploads/2026/02/zdjęcie-biznesowe-A.Mering.png

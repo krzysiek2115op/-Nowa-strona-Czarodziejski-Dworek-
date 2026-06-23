@@ -1,0 +1,78 @@
+/* ============================================================
+   WWR — wczesne-wspomaganie-rozwoju.html : style sekcji
+   (wyłącznie dla tej podstrony — osobny plik).
+   Ciemne karty terapii używają wspólnej klasy .card-dark
+   (zdefiniowanej w styles.css), więc nie ma ich tutaj.
+   ============================================================ */
+
+/* --- Kroki: oś czasu z łukiem i złotymi numerami --- */
+.wwr-steps{
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 24px;
+  position: relative;
+}
+.wwr-steps::before{
+  content: "";
+  position: absolute; top: 57px; left: 11%; right: 11%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold) 12%, var(--gold) 88%, transparent);
+  opacity: .55; z-index: 0;
+}
+.wwr-step{
+  position: relative; z-index: 1;
+  background-color: var(--surface);
+  background-image: linear-gradient(180deg,#FFFFFF 0%,#FBF4EA 100%);
+  border: 1px solid rgba(196,154,74,.22);
+  border-top: 3px solid var(--gold);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: 30px 24px 26px;
+  box-shadow: 0 26px 50px -34px rgba(94,45,64,.30);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.wwr-step:hover{ transform: translateY(-5px); box-shadow: 0 32px 62px -30px rgba(94,45,64,.42); }
+.wwr-step-num{
+  display: flex; width: 56px; height: 56px;
+  align-items: center; justify-content: center;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#e6c87e,#c79a3f);
+  color: #4a2233;
+  font-family: var(--font-display); font-size: 1.55rem; font-weight: 600;
+  box-shadow: 0 10px 22px -8px rgba(199,154,63,.7);
+}
+.wwr-step h3{ font-size: 1.1rem; margin: 0 0 8px; }
+.wwr-step p{ color: var(--ink-soft); font-size: .95rem; margin: 0; }
+
+/* --- Formularz: uniesiony, ciepły panel (jak kafle witryny) + dekoracje --- */
+.wwr-contact{ position: relative; overflow: hidden; }
+.wwr-contact .container{ position: relative; z-index: 1; }
+.wwr-orb{
+  position: absolute; border-radius: 50%;
+  filter: blur(64px); opacity: .5; pointer-events: none; z-index: 0;
+}
+.wwr-form-panel{
+  background-color: var(--surface);
+  background-image: linear-gradient(180deg,#FFFFFF 0%,#FBF4EA 100%);
+  border: 1px solid rgba(196,154,74,.22);
+  border-radius: 110px 110px var(--radius-md) var(--radius-md);
+  padding: 42px 36px 34px;
+  box-shadow: 0 34px 74px -38px rgba(94,45,64,.5);
+}
+.wwr-ico{
+  display: inline-flex; width: 46px; height: 46px;
+  align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: rgba(212,175,90,.16);
+  color: #b8893b; flex-shrink: 0;
+}
+.wwr-ico svg{ width: 20px; height: 20px; }
+
+/* --- Responsywność --- */
+@media (max-width: 1024px){
+  .wwr-steps{ grid-template-columns: repeat(2,1fr); }
+  .wwr-steps::before{ display: none; }
+}
+@media (max-width: 680px){
+  .wwr-steps{ grid-template-columns: 1fr; }
+  .wwr-form-panel{ border-radius: 70px 70px var(--radius-md) var(--radius-md); padding: 32px 22px 26px; }
+}

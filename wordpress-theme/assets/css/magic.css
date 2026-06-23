@@ -1,0 +1,50 @@
+/* ============================================================
+   Czarodziejski Dworek — Magic Layer (orbs, sparks)
+   Subtle, premium, NOT childish.
+   All behind content (z-index: 0, pointer-events: none).
+   ============================================================ */
+
+/* Orbs in hero */
+.hero .magic-orb.orb-1 {
+  width: 300px; height: 300px; top: 15%; right: 8%;
+  opacity: .10; filter: blur(50px);
+  animation: orbFloat 8s ease-in-out infinite alternate;
+}
+.hero .magic-orb.orb-2 {
+  width: 220px; height: 220px; top: 60%; right: 25%;
+  opacity: .08; filter: blur(40px);
+  animation: orbFloat2 10s ease-in-out infinite alternate;
+}
+.hero .magic-orb.orb-3 {
+  width: 180px; height: 180px; top: 30%; left: -5%;
+  opacity: .06; filter: blur(35px);
+  animation: orbFloat3 7s ease-in-out infinite alternate;
+}
+.hero .magic-orb.orb-4 {
+  width: 250px; height: 250px; bottom: 5%; right: 40%;
+  opacity: .07; filter: blur(45px);
+  animation: orbFloat 9s ease-in-out infinite alternate-reverse;
+}
+
+/* Orbs in CTA band */
+.cta-band .magic-orb.orb-cta-1 {
+  width: 200px; height: 200px; top: -20%; left: 10%;
+  opacity: .10; filter: blur(40px);
+  animation: orbFloat2 8s ease-in-out infinite alternate;
+}
+.cta-band .magic-orb.orb-cta-2 {
+  width: 160px; height: 160px; bottom: -15%; right: 15%;
+  opacity: .08; filter: blur(35px);
+  animation: orbFloat 7s ease-in-out infinite alternate;
+}
+
+@media (max-width: 680px) {
+  .hero .magic-orb.orb-3,
+  .hero .magic-orb.orb-4 { display: none; }
+  .hero .magic-orb.orb-1 { width: 180px; height: 180px; }
+  .hero .magic-orb.orb-2 { width: 130px; height: 130px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .magic-orb { animation: none !important; }
+}

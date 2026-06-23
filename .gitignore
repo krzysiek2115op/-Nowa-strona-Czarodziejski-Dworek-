@@ -1,0 +1,21 @@
+# System operacyjny
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Edytory / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Zależności / build
+node_modules/
+__pycache__/
+*.pyc
+
+# Archiwa i paczki (generowane)
+*.zip
+
+# Logi
+*.log
