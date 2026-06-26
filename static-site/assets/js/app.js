@@ -67,7 +67,8 @@
     backdrop && backdrop.classList.remove('open');
     document.body.classList.remove('no-scroll');
     burger && burger.setAttribute('aria-expanded', 'false');
-    burger && burger.focus();
+    // NIE przywracamy focusu na burger: iOS pokazywał pierścień (:focus-visible)
+    // przy dotyku po zamknięciu menu („kółko" po prawej). Telefon nie ma klawiatury.
   }
 
   burger && burger.addEventListener('click', openDrawer);

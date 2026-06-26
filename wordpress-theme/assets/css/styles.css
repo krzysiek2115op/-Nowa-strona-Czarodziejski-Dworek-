@@ -634,8 +634,8 @@ img[src*="dzieci-zabawa"] { filter: brightness(1.1) saturate(1.05); }
 }
 @media (max-width: 680px) {
   .hero { padding: 110px 0 0; }
-  .hero-ctas { flex-direction: column; }
-  .hero-ctas .btn { width: 100%; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .hero-ctas .btn { width: auto; max-width: 100%; }
 }
 
 /* Hero load animation */
@@ -1752,10 +1752,11 @@ body.has-announce .scroll-progress{ top: var(--cd-announce-h, 40px); }
 }
 
 @media (max-width: 680px) {
-  /* 1) przyciski — większy tekst + ciaśniejszy padding = brak pustych miejsc */
-  .btn { font-size: 1rem; padding: 13px 22px; }
-  /* 5) menu mobilne — ciaśniej i czytelniej */
+  /* 1) przyciski — wyraźniejszy tekst; hero/stopka jeszcze większe (klient: "za małe na przycisk") */
+  .btn { font-size: 1.05rem; padding: 13px 22px; }
+  .hero-ctas .btn, .drawer-foot .btn { font-size: 1.08rem; }
+  /* 5) menu mobilne — większy tekst pozycji + ciaśniejsze odstępy */
   .drawer-header { padding: 16px 20px; }
   .drawer-nav { padding: 10px 12px; }
-  .drawer-nav a { min-height: 46px; padding: 11px 14px; font-size: 1.12rem; }
+  .drawer-nav a { min-height: 46px; padding: 11px 14px; font-size: 1.18rem; }
 }
