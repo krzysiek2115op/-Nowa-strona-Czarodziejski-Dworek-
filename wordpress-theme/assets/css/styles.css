@@ -1729,3 +1729,33 @@ body.has-announce .scroll-progress{ top: var(--cd-announce-h, 40px); }
   body.has-announce .nav{ top: var(--cd-announce-h, 64px); }
   body.has-announce .scroll-progress{ top: var(--cd-announce-h, 64px); }
 }
+
+/* ============================================================
+   POPRAWKI RWD — uwagi klienta (2026-06)
+   1) przyciski: tekst lepiej wypełnia przycisk (mobile)
+   2,3) sekcje "split" (Adaptacja / Uniwersytet / Mapa) wyśrodkowane
+        na mobile — tak jak Galeria / Opinie
+   4) mapa: tło w kolorze motywu zamiast białego
+   5) menu mobilne (drawer): ciaśniejsze odstępy, czytelniejszy tekst
+   ============================================================ */
+
+/* 4) Mapa — żadnego białego tła pod/za iframe */
+.map-arch, .map-arch iframe { background: var(--bg); }
+
+@media (max-width: 1024px) {
+  /* 2,3) gdy split składa się w pion — wyśrodkuj treść jak w sekcjach z .center */
+  .split > div { text-align: center; }
+  .split .eyebrow { justify-content: center; }
+  .split ul { align-items: center; }            /* listy (np. adres) jako wyśrodkowane bloki */
+  .split ul > li { text-align: left; }           /* ...ale tekst pozycji czytany od lewej */
+  .split > div > div[style*="flex"] { justify-content: center; }  /* rzędy przycisków */
+}
+
+@media (max-width: 680px) {
+  /* 1) przyciski — większy tekst + ciaśniejszy padding = brak pustych miejsc */
+  .btn { font-size: 1rem; padding: 13px 22px; }
+  /* 5) menu mobilne — ciaśniej i czytelniej */
+  .drawer-header { padding: 16px 20px; }
+  .drawer-nav { padding: 10px 12px; }
+  .drawer-nav a { min-height: 46px; padding: 11px 14px; font-size: 1.12rem; }
+}
