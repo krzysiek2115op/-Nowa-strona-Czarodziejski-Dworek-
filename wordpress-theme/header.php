@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="pl-PL">
+  <meta name="geo.region" content="PL-14">
+  <meta name="geo.placename" content="Warszawa, Wola">
+  <meta name="geo.position" content="52.2318;20.9435">
+  <meta name="ICBM" content="52.2318, 20.9435">
   <?php
     $cd_desc  = cd_meta_desc();
     $cd_title = wp_get_document_title();

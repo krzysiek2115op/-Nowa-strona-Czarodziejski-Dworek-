@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 function cd_seo_desc_map() {
 	return array(
-		'index' => 'Językowo-muzyczne przedszkole integracyjne na Górczewskiej 89. Małe grupy, basen, angielski, francuski, 18 terapeutów na miejscu. Od 2003.',
+		'index' => 'Prywatne przedszkole integracyjne w Warszawie (Wola, ul. Górczewska 89). Językowo-muzyczne: małe grupy, basen, angielski i francuski, 18 specjalistów. Od 2003.',
 		'o-nas' => 'Poznaj historię Czarodziejskiego Dworku — integracyjnego przedszkola na Woli. 22+ lat doświadczenia, certyfikat NVC, 18 specjalistów, małe grupy.',
 		'program' => 'Basen, angielski, francuski, muzyka w czesnym. Logopedia, SI, TUS, fizjoterapia i bezpłatne WWR. Przedszkole Czarodziejski Dworek, Wola.',
 		'wczesne-wspomaganie-rozwoju' => 'Bezpłatne wczesne wspomaganie rozwoju (WWR) na Woli: terapia logopedyczna, psychologiczna, integracja sensoryczna, fizjoterapia i TUS. Także spoza przedszkola.',
@@ -63,7 +63,7 @@ function cd_seo_title_map() {
 
 /** Pełny <title> per kontekst (hak pre_get_document_title — pełna kontrola). */
 function cd_doc_title( $title = '' ) {
-	if ( is_front_page() ) { return 'Przedszkole integracyjne Warszawa | Czarodziejski Dworek'; }
+	if ( is_front_page() ) { return 'Czarodziejski Dworek — prywatne przedszkole, Warszawa Wola'; }
 	if ( is_singular( 'post' ) ) {
 		$cd_pid = get_queried_object_id();
 		$cd_seo = get_post_meta( $cd_pid, '_cd_seo_title', true );

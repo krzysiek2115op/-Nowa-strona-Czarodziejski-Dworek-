@@ -21,9 +21,9 @@ $t = get_template_directory_uri();
   <div class="container">
     <div class="hero-content">
       <p class="hero-badge hero-anim hero-anim-1"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.45 4 2.55 6.1 6 6.5-3.45.4-5.55 2.5-6 6.5-.45-4-2.55-6.1-6-6.5 3.45-.4 5.55-2.5 6-6.5z"/></svg>Przedszkole integracyjne językowo-muzyczne · Warszawa, Wola</p>
-      <h1 id="hero-title" class="hero-title hero-anim hero-anim-2">Tu każda zabawa<br>jest <span class="hero-accent">nauką</span></h1>
+      <h1 id="hero-title" class="hero-title hero-anim hero-anim-2">Czarodziejski Dworek<br><span class="hero-accent">prywatne przedszkole w Warszawie</span></h1>
       <p class="hero-brandline hero-anim hero-anim-2b">Czarodziejski Dworek · od 2003 roku</p>
-      <p class="hero-lead hero-anim hero-anim-3">Odkrywamy i&nbsp;pielęgnujemy mocne strony Twojego dziecka — w&nbsp;małych grupach, z&nbsp;basenem, językami i&nbsp;18 specjalistami na&nbsp;miejscu.</p>
+      <p class="hero-lead hero-anim hero-anim-3">Tu każda zabawa jest nauką. W&nbsp;sercu Woli, przy ul.&nbsp;Górczewskiej&nbsp;89, odkrywamy mocne strony Twojego dziecka — małe grupy, basen, języki i&nbsp;18 specjalistów na&nbsp;miejscu.</p>
       <div class="hero-ctas hero-anim hero-anim-4">
         <a href="<?php echo esc_url( home_url('/kontakt/') ); ?>" class="btn btn-primary">Zapisz się na adaptację<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
         <a href="tel:+48690629501" class="btn btn-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Zadzwoń: 690 629 501</a>

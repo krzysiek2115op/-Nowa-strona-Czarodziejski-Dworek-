@@ -6,21 +6,22 @@ tej samej strony.
 
 ```
 .
-├─ static-site/       # wersja statyczna (HTML/CSS/JS) — bez zależności, bez budowania
-└─ wordpress-theme/   # autorski motyw WordPress (zero wtyczek)
+├─ index.html + podstrony   # strona statyczna (HTML/CSS/JS) — serwowana przez GitHub Pages
+├─ assets/                  # css, js, img, icons, docs, fonts
+├─ favicon.ico, robots.txt, sitemap.xml, og-image.jpg
+└─ wordpress-theme/         # autorski motyw WordPress (zero wtyczek)
 ```
 
 Obie wersje mają identyczny wygląd i treść — różnią się tylko technologią.
 
 ---
 
-## 1. Wersja statyczna — `static-site/`
+## 1. Wersja statyczna (w korzeniu repozytorium)
 
 Czysty HTML/CSS/JS. Nie wymaga niczego do uruchomienia.
 
-- **Podgląd lokalny:** otwórz `static-site/index.html` w przeglądarce, albo uruchom prosty serwer:
+- **Podgląd lokalny:** otwórz `index.html` w przeglądarce, albo uruchom prosty serwer:
   ```bash
-  cd static-site
   python3 -m http.server 8080
   # → http://localhost:8080
   ```
