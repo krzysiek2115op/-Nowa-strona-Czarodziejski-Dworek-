@@ -394,7 +394,7 @@ function cd_pl_date( $id ) {
  */
 function cd_assets() {
 	$uri = get_template_directory_uri();
-	$ver = '45';
+	$ver = '46';
 
 	wp_enqueue_style( 'cd-fonts', $uri . '/assets/fonts/fonts.css', array(), $ver );
 	wp_enqueue_style( 'cd-styles', $uri . '/assets/css/styles.css', array( 'cd-fonts' ), $ver );

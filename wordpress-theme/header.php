@@ -223,7 +223,7 @@
 <div class="drawer-backdrop" aria-hidden="true"></div>
 <aside class="drawer" aria-label="Menu mobilne">
   <div class="drawer-header">
-    <span style="font-family:var(--font-display);font-weight:600;font-size:1.1rem">Menu</span>
+    <span style="font-family:var(--font-display);font-weight:600;font-size:1.4rem">Menu</span>
     <button class="drawer-close" aria-label="Zamknij menu">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>

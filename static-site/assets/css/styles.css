@@ -1736,9 +1736,12 @@ body.no-scroll { overflow: hidden; }
 }
 
 @media (max-width: 680px) {
-  /* 1) przyciski — wyraźniejszy tekst; hero/stopka jeszcze większe (klient: "za małe na przycisk") */
+  /* 1) przyciski — wyraźniejszy tekst */
   .btn { font-size: 1.05rem; padding: 13px 22px; }
-  .hero-ctas .btn, .drawer-foot .btn { font-size: 1.08rem; }
+  .hero-ctas .btn { font-size: 1.08rem; }
+  /* przyciski „na całą szerokość" (btn-full: stopka szuflady + submit formularzy)
+     → na mobile szerokość treści, wyśrodkowane = subtelniejsze (uwaga klienta) */
+  .btn-full { display: flex; width: fit-content; max-width: 100%; margin-inline: auto; }
   /* 5) menu mobilne — większy tekst pozycji + ciaśniejsze odstępy */
   .drawer-header { padding: 16px 20px; }
   .drawer-nav { padding: 10px 12px; }
