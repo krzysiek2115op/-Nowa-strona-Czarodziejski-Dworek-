@@ -12,8 +12,7 @@ if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
 	define( 'DISALLOW_FILE_EDIT', true );
 }
 
-/* 2. Nagłówki bezpieczeństwa (front-end + REST).
- *    CSP świadomie pominięte — patrz instrukcja „5-ZABEZPIECZENIA” i „dodatki/htaccess-zabezpieczenia.txt”. */
+/* 2. Nagłówki bezpieczeństwa (front-end + REST). */
 function cd_security_headers() {
 	if ( is_admin() ) {
 		return;
@@ -23,6 +22,19 @@ function cd_security_headers() {
 	header( 'Referrer-Policy: strict-origin-when-cross-origin' );
 	header( 'Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()' );
 	header( 'X-XSS-Protection: 0' );
+
+	/* Content-Security-Policy — tylko dla NIEzalogowanych gości (to oni są powierzchnią ataku XSS/clickjacking).
+	 * Zalogowany właściciel pominięty, by pasek administracyjny WP działał bez zakłóceń.
+	 * Dozwolone DOKŁADNIE to, czego strona używa: mapa Google (iframe), formularze Web3Forms,
+	 * własne skrypty (2 inline-hashe SHA-256), inline-style (atrybuty style=""), obrazy data:. */
+	if ( ! is_user_logged_in() ) {
+		$csp  = "default-src 'self'; base-uri 'self'; object-src 'none'; ";
+		$csp .= "script-src 'self' 'sha256-/cyN7inEK6S0tUQWg6IE1lSr70GbFLbYESB6AgLU+Gk=' 'sha256-W1NlZmGgjhEYXqrZTThvV9CjGjPcOy97HbcHggHwq5s='; ";
+		$csp .= "style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; ";
+		$csp .= "connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; ";
+		$csp .= "frame-src https://www.google.com; frame-ancestors 'self'; upgrade-insecure-requests";
+		header( 'Content-Security-Policy: ' . $csp );
+	}
 }
 add_action( 'send_headers', 'cd_security_headers' );
 
@@ -38,6 +50,15 @@ remove_action( 'wp_head', 'wlwmanifest_link' );
 /* 4. Nie zdradzaj wersji WordPressa (utrudnia dobranie exploitów). */
 remove_action( 'wp_head', 'wp_generator' );
 add_filter( 'the_generator', '__return_empty_string' );
+
+/* 4b. Wyłącz skrypt/style emoji WP — usuwa inline-script core'a (czystsze CSP) i lekko przyspiesza. */
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+add_filter( 'tiny_mce_plugins', function ( $plugins ) {
+	return is_array( $plugins ) ? array_diff( $plugins, array( 'wpemoji' ) ) : $plugins;
+} );
 
 /* 5. Ogólny komunikat błędu logowania — nie zdradzaj, czy zły był login czy hasło. */
 add_filter( 'login_errors', function () {
