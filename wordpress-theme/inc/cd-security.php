@@ -111,3 +111,17 @@ add_action( 'wp_login_failed', function () {
 add_action( 'wp_login', function () {
 	delete_transient( cd_login_key() );
 } );
+
+
+/* 8. Nagłówki bezpieczeństwa również na stronie logowania (wp-login.php).
+ *    Hook send_headers nie odpala się na wp-login.php, więc dokładamy je osobno.
+ *    CSP tu pomijamy — strona logowania używa własnych skryptów/stylów WordPressa. */
+function cd_login_security_headers() {
+	header( 'X-Content-Type-Options: nosniff' );
+	header( 'X-Frame-Options: SAMEORIGIN' );
+	header( 'Referrer-Policy: strict-origin-when-cross-origin' );
+	header( 'Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()' );
+	header( 'X-XSS-Protection: 0' );
+	header( 'X-Robots-Tag: noindex, nofollow' ); // strona logowania poza indeksem wyszukiwarek
+}
+add_action( 'login_init', 'cd_login_security_headers' );
