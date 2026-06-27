@@ -142,3 +142,17 @@ CDFAQ;
 	}
 	return '<script type="application/ld+json">' . $json . '</script>' . "\n";
 }
+
+
+/* robots.txt — dołóż linię Sitemap (mapę strony) do wirtualnego robots.txt WordPressa,
+ * żeby wyszukiwarki od razu znalazły mapę. Działa, gdy NIE ma fizycznego pliku robots.txt
+ * w katalogu głównym i gdy strona nie jest ustawiona jako niewidoczna (Ustawienia → Czytanie). */
+add_filter( 'robots_txt', function ( $output, $public ) {
+	if ( '0' === (string) $public ) {
+		return $output; // strona oznaczona jako niewidoczna — nie nadpisujemy
+	}
+	if ( false === stripos( (string) $output, 'sitemap:' ) ) {
+		$output = rtrim( (string) $output ) . "\n\nSitemap: " . esc_url( home_url( '/wp-sitemap.xml' ) ) . "\n";
+	}
+	return $output;
+}, 20, 2 );
